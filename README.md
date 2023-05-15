@@ -42,12 +42,13 @@ If you prefer to install it in a different way, I recommend you to go to the sou
 After the installation is complete, configure the necessary settings.
 
 `echo $PATH`
+
 `export PATH=$PATH:/root/.cargo/bin`
 
 Step 6
-```git clone https://github.com/celestiaorg/ethermint.git
+`git clone https://github.com/celestiaorg/ethermint.git
 cd ethermint
-make install```
+make install`
 
 `source root/.bashrc`
 
