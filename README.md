@@ -91,6 +91,36 @@ Let's deploy our ethermint by running the codes in order.
 DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')`
 
 
-```ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT```
+```ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT ```
+
+![bırıncı](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/d85789c9-08fb-43d8-a0e3-331a229ece05)
 
 Once you are certain that your node is running as shown in the output, press `CTRL-A+D` to detach the screen and send it to the background.
+
+## WARNING!
+# Do not forget to get `TİA` 
+
+# Step 10
+If the forge folder is not properly installed with Foundry on your server, you can use the following commands.
+
+`npm install -g @arcblock/forge-cli`
+
+`forge remappings`
+
+`ds-test/=lib/forge-std/lib/ds-test/src/`
+
+`forge-std/=lib/forge-std/src/`
+
+`forge init nft`
+
+`cd nft/lib/forge-std`
+
+`npm run` in the forge
+
+`npm run build` in the forge
+
+`forge install Openzeppelin/openzeppelin-contracts`
+
+
+# Step 11
+
