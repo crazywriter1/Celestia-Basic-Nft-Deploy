@@ -45,39 +45,44 @@ After the installation is complete, configure the necessary settings.
 
 `export PATH=$PATH:/root/.cargo/bin`
 
-Step 6
-`git clone https://github.com/celestiaorg/ethermint.git
-cd ethermint
-make install`
+# Step 6
 
-`source root/.bashrc`
+`git clone https://github.com/celestiaorg/ethermint.git`
+`cd ethermint`
+`make install`
 
-Step 7
+And `source root/.bashrc`
+
+# Step 7
 
 As a precaution, move the necessary cargo files into the ethermint directory.
 
-cargo init
-source $HOME/.cargo/env
-cargo install cargo-update
-cargo install-update -a
+`cargo init`
 
-Step 8
+`source $HOME/.cargo/env`
+
+`cargo install cargo-update`
+
+`cargo install-update -a`
+
+# Step 8
 
 Open a screen for Ethermint to run in the background.
 
-Screen -S NFT
+`Screen -S NFT`
 
-Make sure you are inside the ethermint directory. If you're not, navigate to it using the command cd ethermint.
+Make sure you are inside the ethermint directory. If you're not, navigate to it using the command `cd ethermint`.
 
-Step 9
+# Step 9
 
 Let's deploy our ethermint by running the codes in order.
 
-bash init.sh
+`bash init.sh`
 
-NAMESPACE_ID=$(openssl rand -hex 8)
-DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')
+`NAMESPACE_ID=$(openssl rand -hex 8)
+DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')`
 
-ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT
 
-Once you are certain that your node is running as shown in the output, press CTRL-A+D to detach the screen and send it to the background.
+`ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT`
+
+Once you are certain that your node is running as shown in the output, press `CTRL-A+D` to detach the screen and send it to the background.
