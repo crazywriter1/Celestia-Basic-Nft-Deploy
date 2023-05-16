@@ -229,8 +229,7 @@ Export your contract
 
 `export CONTRACT_ADDRESS=0x0116686e2291dbd5e317f47fadbfb43b599786ef`
 
-`forge script script/Bugs.s.sol:BugsScript --fork-url \
-$RPC_URL  --private-key $ANVIL_KEY --broadcast`
+`forge script script/Bugs.s.sol:BugsScript --fork-url \ $RPC_URL  --private-key $ANVIL_KEY --broadcast`
 
 Export your recipient
 
@@ -249,8 +248,7 @@ Example
 
 `echo PRIVATE_KEY=$(ethermintd keys unsafe-export-eth-key mykey --keyring-backend test)`
 
-`forge script script/Bugs.s.sol:BugsScript  \
---rpc-url http://localhost:8545 --private-key $PRIVATE_KEY --broadcast`
+`forge script script/Bugs.s.sol:BugsScript \ --rpc-url http://localhost:8545 --private-key $PRIVATE_KEY --broadcast`
 
 After that write in the code export your contract adress.
 
