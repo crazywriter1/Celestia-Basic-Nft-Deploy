@@ -5,7 +5,7 @@ Everyone know that free NFT collections can create a hype on any network. Lately
 In this guide, I will show you how to create a free NFT collection on Celestia using a simple mint contract. With the help of the NFT collection that I have previously deployed and created, you will be able to be part of this ecosystem as well.
 
 # Step 1
-Deploy your light Celestia node with my script.
+Deploy your Celestia node light with my script.
 
 `https://github.com/crazywriter1/node_installation_tool`
 
@@ -150,7 +150,7 @@ Save your ipfs code!
 
 # Step 12
 
-The places to be modified in the content of the files `t.sol`, `s.sol`, and `.sol` are marked with red boxes. Replace these boxes with your collection name and IPFS link, and you can run the Free minting function.
+The places to be modified in the content of the files `t.sol`, `s.sol`, and `.sol` are marked with red boxes. Replace these boxes with your collection name and IPFS link .Also change your supply amount, mint price and you can run the Free minting function.
 
 You can edit the files and transfer them to your server using `MobaXterm` or `WinSCP` or you can edit them directly on your server using the commands;
 
