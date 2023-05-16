@@ -258,7 +258,7 @@ After that write in the code export your contract adress.
 
 You can mint your nfts with this code
 
-`cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$ANVIL_KEY`
+`cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$PRIVATE_KEY`
 
 
 You now have deployed an NFT collection on a rollup. Next, you need to connect this project to an interface and handle the necessary requests.
