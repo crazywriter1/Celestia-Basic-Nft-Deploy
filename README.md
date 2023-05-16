@@ -229,8 +229,8 @@ Export your contract
 
 `export CONTRACT_ADDRESS=0x0116686e2291dbd5e317f47fadbfb43b599786ef`
 
-forge script script/Bugs.s.sol:BugsScript --fork-url \
-$RPC_URL  --private-key $ANVIL_KEY --broadcast
+`forge script script/Bugs.s.sol:BugsScript --fork-url \
+$RPC_URL  --private-key $ANVIL_KEY --broadcast`
 
 Export your recipient
 
