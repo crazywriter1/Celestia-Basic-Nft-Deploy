@@ -247,5 +247,11 @@ Export your recipient
 Now you can mint your nfts.
 
 
-# Bonus Step
+## Bonus
+
+You can watch how to set up Metamask network settings from the link below. You can add the private key you exported from Metamask's account details section by clicking on the circular button on Metamask. Soon, I will provide a simple guide on how to easily connect your contract to a domain and how to publish your NFT project and market it. The difficult part is over, and you are now very close to becoming an NFT project owner.
+
+# Watch Metamask Network Settings Tutorial
+
+https://docs.celestia.org/assets/images/add-metamask-4422ec98f02b36d3faea64cb152be92c.gif
 
