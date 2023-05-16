@@ -244,7 +244,9 @@ Export your recipient
 
 `cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$PRIVATE_KEY`
 
-Now you can mint your nfts.
+Now you can mint your nfts with this code.
+
+You now have deployed an NFT collection on a rollup. Next, you need to connect this project to an interface and handle the necessary requests.
 
 
 # Bonus
