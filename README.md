@@ -223,9 +223,7 @@ Change `Bugs`
 
 Congratulations Mint contract deployed.
 
-# Step 16
-
-Set some conf.
+Now Set some conf.
 
 Export your contract
 
@@ -239,8 +237,17 @@ Export your recipient
 
 `export RECIPIENT_ADDRESS=0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039`
 
+# Step 16
 
-# Final Step
+
+`forge script script/Bugs.s.sol:BugsScript  \
+--rpc-url http://localhost:8545 --private-key $PRIVATE_KEY --broadcast`
+
+after you adress write in the code export your contract adress.
+
+`export CONTRACT_ADDRESS=<new-contract-address>` Like this `export CONTRACT_ADDRESS=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`
+
+You can mint your nfts with this code
 
 `cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$PRIVATE_KEY`
 
