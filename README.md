@@ -87,10 +87,10 @@ Let's deploy our ethermint by running the codes in order.
 
 `bash init.sh`
 
-```NAMESPACE_ID=$(openssl rand -hex 8)
-DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')```
+`NAMESPACE_ID=$(openssl rand -hex 8)
+DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')`
 
 
-```ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT```
+```ethermintd start --rollkit.aggregator true --rollkit.da_layer celestia --rollkit.da_config='{"base_url":"http://localhost:26659","timeout":60000000000,"gas_limit":6000000,"fee":6000}' --rollkit.namespace_id $NAMESPACE_ID --rollkit.da_start_height $DA_BLOCK_HEIGHT````
 
 Once you are certain that your node is running as shown in the output, press `CTRL-A+D` to detach the screen and send it to the background.
