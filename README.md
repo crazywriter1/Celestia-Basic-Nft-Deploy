@@ -47,9 +47,9 @@ After the installation is complete, configure the necessary settings.
 
 # Step 6
 
-`git clone https://github.com/celestiaorg/ethermint.git`
+``git clone https://github.com/celestiaorg/ethermint.git`
 `cd ethermint`
-`make install`
+`make install``
 
 And `source root/.bashrc`
 
