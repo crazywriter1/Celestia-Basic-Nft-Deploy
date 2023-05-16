@@ -274,7 +274,8 @@ https://docs.celestia.org/assets/images/add-metamask-4422ec98f02b36d3faea64cb152
 
 # User Interface
 
-![Sip](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/5ccd1bee-cd21-48f9-a946-fb835779e581)
+![Celesti](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/faac5aab-4dc7-433f-b58a-76fc465ccdca)
+
 
 
 I have designed such an interface for Bugs NFTs. By modifying the colors, links, and specific sections of this interface, I will show how to deploy your own project with a domain address. Get ready to secure your spot among the NFT projects in Celestia.
