@@ -241,7 +241,7 @@ Export your recipient
 
 Example
 
-`cast send --rpc-url=http://localhost:9545 0xbd4f42743becf5955e5adef700a8adcda99bda62 "mintTo(address)" 0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039 --private-key=0x8b3a350cf5c34c9194ca85829a2df0ec3153be0318b5e2d3348e872092edffba
+`cast send --rpc-url=http://localhost:9545 0xbd4f42743becf5955e5adef700a8adcda99bda62 "mintTo(address)" 0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039 --private-key=0x8b3a350cf5c34c9194ca85829a2df0ec3153be0318b5e2d3348e872092edffba`
 
 # Step 16
 
