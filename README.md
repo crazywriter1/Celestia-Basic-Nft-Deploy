@@ -257,3 +257,7 @@ You can watch how to set up Metamask network settings from the link below. You c
 
 https://docs.celestia.org/assets/images/add-metamask-4422ec98f02b36d3faea64cb152be92c.gif
 
+
+I'm open to ideas about interfaces of collections. If you encounter any problems or have a suggestion for the Website, please do not hesitate to contact me.
+
+https://twitter.com/mjolnirisback
