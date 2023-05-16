@@ -259,6 +259,9 @@ https://docs.celestia.org/assets/images/add-metamask-4422ec98f02b36d3faea64cb152
 
 
 I'm open to ideas about interfaces designs . If you encounter any problems or have a suggestion for the Website, please do not hesitate to contact me.
+
+# User Interface
+
 ![Btc Dominans   Eth Dominans (5)](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/2a20b13d-9869-4865-9e7d-53d7f01cead0)
 
 I have designed such an interface for Bugs NFTs. By modifying the colors, links, and specific sections of this interface, I will show you how to deploy your own project with a domain address. Get ready to secure your spot among the NFT projects in Celestia.
