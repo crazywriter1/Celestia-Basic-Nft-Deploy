@@ -192,11 +192,60 @@ I recommend opening the following port codes:
 `sudo ufw allow 9101`
 `sudo ufw allow 181`
 `sudo ufw allow 182`
-`sudo ufw allow 9595`
+`sudo ufw allow 9545`
 `sudo ufw allow 4133`
 `sudo ufw allow 3033`
 `sudo ufw allow 8080`
 `sudo ufw allow 9103`
 `sudo ufw enable`
 
-You should especially enable the following port codes: `8080`, `80`, `9595`, `8585`, `https`, and `http`.
+You should especially enable the following port codes: `8080`, `80`, `9545`, `8585`, `https`, and `http`.
+
+
+# Step 15
+
+Open new screen  `screen -S anvil` 
+Be sure you are in nft file `cd nft`
+
+`anvil --port 9545`
+
+![you can get one of you](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/3bb2d766-e9ac-4699-99d9-46b4fe42f904)
+
+Get one key and export it with `export ANVIL_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`
+
+`export RPC_URL=http://YOUR_IP:9545`
+
+`forge script script/Bugs.s.sol:BugsScript --fork-url $RPC_URL  --private-key $ANVIL_KEY --broadcast`
+
+Change `Bugs`
+
+![anvil](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/26df93cc-db4a-4b27-b89c-4939085c4d7d)
+
+Congratulations Mint contract deployed.
+
+# Step 16
+
+Set some conf.
+
+Export your contract
+
+`export CONTRACT_ADDRESS=0x0116686e2291dbd5e317f47fadbfb43b599786ef`
+
+Get your priv keys
+
+`echo PRIVATE_KEY=$(ethermintd keys unsafe-export-eth-key mykey --keyring-backend test)`
+
+Export your recipient
+
+`export RECIPIENT_ADDRESS=0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039`
+
+
+# Step 17
+
+
+
+## Anket
+
+- [ ] A 1
+- [ ] B 2
+- [ ] C 3
