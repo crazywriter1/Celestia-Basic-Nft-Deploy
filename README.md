@@ -236,8 +236,14 @@ Export your recipient
 
 `export RECIPIENT_ADDRESS=0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039`
 
-# Step 16
+ You can try to mint
+`cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$ANVIL_KEY`
 
+Example
+
+`cast send --rpc-url=http://localhost:9545 0xbd4f42743becf5955e5adef700a8adcda99bda62 "mintTo(address)" 0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039 --private-key=0x8b3a350cf5c34c9194ca85829a2df0ec3153be0318b5e2d3348e872092edffba
+
+# Step 16
 
  Get your priv keys
 
@@ -252,7 +258,7 @@ after you adress write in the code export your contract adress.
 
 You can mint your nfts with this code
 
-`cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$PRIVATE_KEY`
+`cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$ANVIL_KEY`
 
 
 You now have deployed an NFT collection on a rollup. Next, you need to connect this project to an interface and handle the necessary requests.
@@ -260,7 +266,7 @@ You now have deployed an NFT collection on a rollup. Next, you need to connect t
 
 # Bonus
 
-You can watch how to set up Metamask network settings from the link below. You can add the private key you exported from Metamask's account details section by clicking on the circular button on Metamask. Soon, I will provide a simple guide on how to easily connect your contract to a domain and how to publish your NFT project and market it. The difficult part is over, and you are now very close to becoming an NFT project owner.
+You can watch how to set up Metamask network settings from the link below. You can add the private key you exported from Metamask's account details section by clicking on the circular button on Metamask. Soon, I will provide a simple guide on how to easily connect your contract to a domain(Frontend- User ınterface) and how to publish your NFT project and market it. The difficult part is over, and you are now very close to becoming an NFT project owner.
 
 # Watch Metamask Network Settings Tutorial
 
