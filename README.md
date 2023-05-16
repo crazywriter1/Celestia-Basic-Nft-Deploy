@@ -183,7 +183,7 @@ Congratulations!! Mint machine operational
 
 I recommend opening the following port codes:
 
-`sudo apt install ufw -y
+`sudo apt install ufw -y`
 `sudo ufw allow ssh`
 `sudo ufw allow https`
 `sudo ufw allow http`
@@ -197,6 +197,6 @@ I recommend opening the following port codes:
 `sudo ufw allow 3033`
 `sudo ufw allow 8080`
 `sudo ufw allow 9103`
-`sudo ufw enable``
+`sudo ufw enable`
 
 You should especially enable the following port codes: `8080`, `80`, `9595`, `8585`, `https`, and `http`.
