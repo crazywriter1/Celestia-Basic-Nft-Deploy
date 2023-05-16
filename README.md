@@ -124,3 +124,79 @@ If the forge folder is not properly installed with Foundry on your server, you c
 
 # Step 11
 
+Before editing and compiling the contract of your NFT project, I recommend using the NFT generator at `https://www.genfty.com/nft-generator` or using the IPFS of a collection you have prepared from another source.
+
+# Others İPFS apps
+
+`https://app.pinata.cloud/gateway`
+
+`https://www.infura.io/product/ipfs`
+
+# Genfty
+
+Upload your remix data.
+
+![genftyguı](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/27feb614-70d3-4b03-a24f-4c07374a9664)
+
+
+Please pay attention to the following steps, as you will use the entered data in your contract. Please make sure to remember what you enter.
+
+![genfyguı1](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/b4bbac35-548e-4cf8-ad03-80fcd3ad60f4)
+
+Save your ipfs code!
+
+![genftyguı3](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/7253063b-2397-477e-9706-5908f49bbf4b)
+
+
+# Step 12
+
+The places to be modified in the content of the files `t.sol`, `s.sol`, and `.sol` are marked with red boxes. Replace these boxes with your collection name and IPFS link, and you can run the Free minting function.
+
+You can edit the files and transfer them to your server using `MobaXterm` or `WinSCP` or you can edit them directly on your server using the commands;
+
+`sudo nano Counter.sol`
+`sudo nano Counter.t.sol`
+`sudo nano Counter.s.sol`
+
+.sol
+
+![kontrat1](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/6801ba4a-41c0-46ac-9159-ff04cefd72cf)
+
+s.sol
+
+![bugieguide](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/3821e152-2a70-4054-9adf-a15d26660072)
+
+t.sol
+
+![kontrat3](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/4c1de477-62d4-4f6e-92cf-198c616dc6f3)
+
+
+# Step 13
+
+Now compile your contract with `forge test -vv`
+
+Congratulations!! Mint machine operational
+
+![Outputto](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/f88a3828-d55c-46e9-a376-aa826d349f61)
+
+# Step 14
+
+I recommend opening the following port codes:
+
+`sudo apt install ufw -y
+sudo ufw allow ssh
+sudo ufw allow https
+sudo ufw allow http
+sudo ufw allow 6180
+sudo ufw allow 80
+sudo ufw allow 9101
+sudo ufw allow 181
+sudo ufw allow 182
+sudo ufw allow 9595
+sudo ufw allow 4133
+sudo ufw allow 3033
+sudo ufw allow 8080
+sudo ufw allow 9103
+sudo ufw enable`
+
+You should especially enable the following port codes: `8080`, `80`, `9595`, `8585`, `https`, and `http`.
