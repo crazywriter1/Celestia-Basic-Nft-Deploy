@@ -247,6 +247,15 @@ Example
  Get your priv keys
 
 `echo PRIVATE_KEY=$(ethermintd keys unsafe-export-eth-key mykey --keyring-backend test)`
+- After you get the private key, import the metamask and copy your wallet address. Then paste the code below.
+
+`export RECIPIENT_ADDRESS=<your wallet address>` example `export RECIPIENT_ADDRESS=0X00ADFAF000000.....`
+
+Export your RPC 
+
+`export RPC_URL=http://localhost:8545`
+
+Deploy your contract
 
 `forge script script/Bugs.s.sol:BugsScript \ --rpc-url http://localhost:8545 --private-key $PRIVATE_KEY --broadcast`
 
