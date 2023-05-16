@@ -240,12 +240,12 @@ Export your recipient
 `export RECIPIENT_ADDRESS=0xd6C5C3e5A9B7ca3c4661E9C20a8F03450842e039`
 
 
-# Step 17
+# Final Step
+
+`cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$PRIVATE_KEY`
+
+Now you can mint your nfts.
 
 
+# Bonus Step
 
-## Anket
-
-- [ ] A 1
-- [ ] B 2
-- [ ] C 3
