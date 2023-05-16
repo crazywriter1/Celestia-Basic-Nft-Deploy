@@ -229,9 +229,8 @@ Export your contract
 
 `export CONTRACT_ADDRESS=0x0116686e2291dbd5e317f47fadbfb43b599786ef`
 
-Get your priv keys
-
-`echo PRIVATE_KEY=$(ethermintd keys unsafe-export-eth-key mykey --keyring-backend test)`
+forge script script/Bugs.s.sol:BugsScript --fork-url \
+$RPC_URL  --private-key $ANVIL_KEY --broadcast
 
 Export your recipient
 
@@ -239,6 +238,10 @@ Export your recipient
 
 # Step 16
 
+
+ Get your priv keys
+
+`echo PRIVATE_KEY=$(ethermintd keys unsafe-export-eth-key mykey --keyring-backend test)`
 
 `forge script script/Bugs.s.sol:BugsScript  \
 --rpc-url http://localhost:8545 --private-key $PRIVATE_KEY --broadcast`
@@ -251,7 +254,6 @@ You can mint your nfts with this code
 
 `cast send --rpc-url=$RPC_URL $CONTRACT_ADDRESS  "mintTo(address)" $RECIPIENT_ADDRESS --private-key=$PRIVATE_KEY`
 
-Now you can mint your nfts with this code.
 
 You now have deployed an NFT collection on a rollup. Next, you need to connect this project to an interface and handle the necessary requests.
 
