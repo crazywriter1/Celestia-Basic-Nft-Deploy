@@ -276,6 +276,8 @@ You now have deployed an NFT collection on a rollup. Next, you need to connect t
 
 My NFT Contract Address: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
+After installing celestia, ethermint and foundry, you can mint my nft. I will update after frontend is created.
+
 # Bonus
 
 You can watch how to set up Metamask network settings from the link below. You can add the private key you exported from Metamask's account details section by clicking on the circular button on Metamask. Soon, I will provide a simple guide on how to easily connect your contract to a domain(Frontend- User ınterface) and how to publish your NFT project and market it. The difficult part is over, and you are now very close to becoming an NFT project owner.
