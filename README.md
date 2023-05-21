@@ -274,7 +274,7 @@ You now have deployed an NFT collection on a rollup. Next, you need to connect t
 
 ![CELESTIA_MINT](https://github.com/crazywriter1/Celestia-Basic-Nft-Deploy/assets/53251494/83362407-01c5-48dd-8144-b6d88729e638)
 
-NFT Contract adress:0x5FbDB2315678afecb367f032d93F642f64180aa3
+My NFT Contract Adress: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
 # Bonus
 
